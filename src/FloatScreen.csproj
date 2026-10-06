@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+    <AssemblyName>FloatScreen</AssemblyName>
+    <Version>0.4.3</Version>
+    <ApplicationIcon>Assets/FloatScreen.ico</ApplicationIcon>
+    <Product>浮幕 FloatScreen</Product>
+    <Title>浮幕</Title>
+    <Description>Windows 游戏攻略悬浮浏览器与桌面弹幕投影</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4258.31" />
+    <InternalsVisibleTo Include="FloatScreen.Tests" />
+    <EmbeddedResource Include="video-control.js" LogicalName="FloatScreen.video-control.js" />
+    <EmbeddedResource Include="video-clock.js" LogicalName="FloatScreen.video-clock.js" />
+    <EmbeddedResource Include="Assets/FloatScreen.ico" LogicalName="FloatScreen.app.ico" />
+  </ItemGroup>
+</Project>

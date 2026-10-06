@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>FloatScreen.Tests</AssemblyName>
+    <RootNamespace>FloatScreen.TestHarness</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../src/FloatScreen.csproj" />
+    <None Include="Fixtures/smoke.webm" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
